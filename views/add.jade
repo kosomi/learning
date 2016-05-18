@@ -1,0 +1,14 @@
+extend layout
+
+block content
+
+	h1 #{title}
+		h3
+
+		form(method='post')
+			fieldset.form-group
+				labe(for="name") Name:
+				input.form-control(name="name", type="text", placeholder="Enter a name")
+				small.text-muted Giv your chat room a meaningful name.
+			button.btn.btn-primary(type="submit") Create new chat room
+			a.btn.btn-default(href='/admin/rooms') Cancel
