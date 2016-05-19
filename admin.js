@@ -2,8 +2,8 @@ var uuid = require("node-uuid");
 var _ = require("lodash");
 var express = require("express");
 var rooms = require("./data/rooms.json");
-
-var router = express.Router();
+// mounts the router module on a path in the main app. (put the modular file on the same directory with the main app)
+var router = express.Router();          // create modular, mountable route handlers.
 module.exports = router;
 
 router.get('/rooms', function (req, res) {
