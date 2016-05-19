@@ -18,8 +18,8 @@ app.get('/', function(req, res){
 	})
 }) 
 
-var adminRouter = require("./admin");
-app.use("/admin", adminRouter);
+var adminRouter = require("./admin"); 	// call admin file
+app.use("/admin", adminRouter);		// put '/admin' path instead of 'router' on the admin.js file.
 
 app.listen(3000, function(){
 	console.log('ddd')
