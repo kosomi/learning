@@ -1,0 +1,22 @@
+extend index
+block content
+
+	h2 dd 
+
+	h1 #{title}
+	p where is the title?
+
+		table.table.table-striped
+			thead
+				tr
+					td aa
+					td aa
+					td aa
+					td bb
+			tbody
+				each room in rooms
+					tr
+						td aa
+						td=room.name
+						td cc
+						td= room.id
